@@ -1,0 +1,24 @@
+# Python
+.venv/
+.venv-workers/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Cloudflare
+.wrangler/
+python_modules/
+
+# IDE
+.idea/
+.vscode/
+.run/
+
+# Tool caches
+.ruff_cache/
+
+# OS
+Thumbs.db
+.DS_Store
