@@ -1,10 +1,8 @@
-from django.http import JsonResponse
+from django.shortcuts import render
 from django.urls import path
 
-
-def root(_request):
-    return JsonResponse({"message": "Hello from Django on Cloudflare Workers!"})
-
+def root(request):
+    return render(request, "home.html")
 
 urlpatterns = [
     path("", root),
