@@ -8,7 +8,10 @@ DEBUG = False
 ALLOWED_HOSTS = ["*"]
 ROOT_URLCONF = "hello_django.urls"
 MIDDLEWARE = []
-INSTALLED_APPS = []
+
+INSTALLED_APPS = [
+    "django.contrib.staticfiles"
+]
 
 TEMPLATES = [
     {
@@ -21,3 +24,12 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "hello_django.wsgi.application"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/6.1/howto/static-files/
+
+STATIC_URL = "/static/"
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
